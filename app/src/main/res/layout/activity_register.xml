@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login1"
+    tools:context=".RegisterActivity">
+
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="300sp"
+        android:layout_height="70sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/filed"
+        android:fontFamily="@font/aldrich"
+        android:hint="Name :"
+        android:padding="20sp"
+        android:textColor="@color/black"
+
+        android:textSize="26sp"></EditText>
+
+    <EditText
+        android:id="@+id/etmail"
+        android:layout_width="300sp"
+        android:layout_height="70sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="120sp"
+        android:background="@drawable/filed"
+        android:fontFamily="@font/aldrich"
+        android:hint="Email"
+        android:padding="20sp"
+        android:textSize="25sp"></EditText>
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="300sp"
+        android:layout_height="70sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="220sp"
+        android:background="@drawable/filed"
+        android:fontFamily="@font/aldrich"
+        android:hint="Password"
+        android:padding="20sp"
+        android:textSize="25sp"></EditText>
+
+
+    <EditText
+        android:id="@+id/etmob"
+        android:layout_width="300sp"
+        android:layout_height="70sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="330sp"
+        android:background="@drawable/filed"
+        android:fontFamily="@font/aldrich"
+        android:hint="Mobile no :"
+        android:padding="20sp"
+        android:textSize="20sp"></EditText>
+
+    <EditText
+        android:id="@+id/etadd"
+        android:layout_width="300sp"
+        android:layout_height="70sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="440sp"
+        android:background="@drawable/filed"
+        android:fontFamily="@font/aldrich"
+        android:hint="Address"
+        android:padding="20sp"
+        android:textSize="25sp"></EditText>
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="70sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="550sp"
+        android:fontFamily="@font/cabin_semibold"
+        android:text="Register"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="70sp"
+        android:layout_marginLeft="190sp"
+        android:layout_marginTop="550sp"
+        android:fontFamily="@font/cabin_semibold"
+        android:text="cancel"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

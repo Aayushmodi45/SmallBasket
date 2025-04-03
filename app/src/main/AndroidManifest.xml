@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Smallbasket"
+        tools:targetApi="31">
+        <activity
+            android:name=".SelectAddress"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/paymentxml" />
+
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".CartAdapter"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".Yourcart"
+            android:exported="false" />
+        <activity
+            android:name=".ShopAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Shopscreen"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".DeleteActivity"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".UpdateProduct"
+            android:exported="false" />
+        <activity
+            android:name=".GroceryAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Showproduct"
+            android:exported="false" />
+        <activity
+            android:name=".AddProduct"
+            android:exported="false" />
+        <activity
+            android:name=".AdminZone"
+            android:exported="false" />
+        <activity
+            android:name=".changeactivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splashactivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

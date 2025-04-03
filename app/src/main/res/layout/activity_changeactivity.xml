@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg1"
+
+tools:context=".changeactivity">
+
+<ImageView
+    android:id="@+id/ivlogo"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@drawable/back3"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="10dp"
+    />
+
+<TextView
+    android:id="@+id/errorMsg"
+    android:layout_width="300dp"
+    android:layout_height="50sp"
+    android:layout_marginLeft="27dp"
+    android:layout_marginTop="135dp"
+    android:textColor="#FF4C4C"
+    android:textSize="20dp"
+    android:gravity="center"
+    android:textStyle="bold"
+    />
+
+<EditText
+    android:id="@+id/oldpass"
+    android:layout_width="300sp"
+    android:layout_height="50sp"
+    android:layout_marginLeft="27sp"
+    android:layout_marginTop="195sp"
+    android:background="@drawable/textfields"
+    android:elevation="20sp"
+    android:fontFamily="@font/aldrich"
+    android:hint="Old password:"
+    android:paddingLeft="20dp"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textSize="15sp" />
+
+<EditText
+    android:id="@+id/newpass"
+    android:layout_width="300sp"
+    android:layout_height="50sp"
+    android:layout_marginLeft="27sp"
+    android:layout_marginTop="420sp"
+    android:background="@drawable/textfields"
+    android:elevation="20sp"
+    android:fontFamily="@font/aldrich"
+    android:hint="New password:"
+    android:paddingLeft="20dp"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textSize="15sp" />
+
+<Button
+    android:id="@+id/btUp"
+    android:layout_width="160sp"
+    android:layout_height="65sp"
+    android:layout_marginLeft="20sp"
+    android:layout_marginTop="520sp"
+    android:background="@drawable/buttons"
+    android:fontFamily="@font/cabin_semibold"
+    android:text="Update"
+    android:textColor="#6bbb3c"
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/btCancle"
+    android:layout_width="160sp"
+    android:layout_height="65sp"
+    android:layout_marginLeft="190sp"
+    android:layout_marginTop="520sp"
+    android:background="@drawable/buttons"
+    android:fontFamily="@font/cabin_semibold"
+    android:text="Cancel"
+    android:textColor="#6bbb3c"
+    android:textSize="20sp" />
+
+</RelativeLayout>

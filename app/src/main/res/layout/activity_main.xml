@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg1"
+
+tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/ivlogo"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@drawable/back3"
+    android:layout_marginLeft="100dp"
+
+    />
+
+<EditText
+    android:id="@+id/user"
+    android:layout_width="290dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginTop="190dp"
+    android:background="@drawable/textfields"
+    android:elevation="20sp"
+    android:fontFamily="@font/aldrich"
+    android:hint="Enter Username :"
+    android:paddingLeft="20sp"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textSize="15dp" />
+
+<EditText
+    android:id="@+id/etpass"
+    android:layout_width="290dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginTop="430dp"
+    android:background="@drawable/textfields"
+    android:elevation="20sp"
+    android:fontFamily="@font/aldrich"
+    android:hint="Enter Password :"
+    android:paddingLeft="20sp"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textSize="15dp" />
+
+<Button
+    android:id="@+id/login"
+    android:layout_width="115dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="520dp"
+    android:background="@drawable/buttons"
+    android:fontFamily="@font/cabin_semibold"
+    android:text="Login"
+    android:textColor="#6bbb3c"
+    android:textSize="17dp" />
+
+<Button
+    android:id="@+id/change"
+    android:layout_width="135dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="185dp"
+    android:layout_marginTop="520dp"
+    android:background="@drawable/buttons"
+    android:fontFamily="@font/cabin_semibold"
+    android:text="Change Password"
+    android:textColor="#6bbb3c"
+    android:textSize="15dp" />
+
+<Button
+    android:id="@+id/btshop"
+    android:layout_width="260dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="620dp"
+    android:background="@drawable/buttons"
+    android:fontFamily="@font/cabin_semibold"
+    android:text="Shop Now"
+    android:textColor="#6bbb3c"
+    android:textSize="20dp" />
+
+</RelativeLayout>

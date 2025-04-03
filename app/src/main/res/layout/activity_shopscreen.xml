@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".Shopscreen">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/back3"
+        android:layout_marginLeft="153sp"
+        />
+<!--        android:paddingBottom="20dp"-->
+<!--        android:paddingRight="20dp"-->
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="360sp"
+        android:layout_height="60sp"
+           android:layout_marginTop="120sp"
+           android:layout_marginLeft="20sp"
+           android:background="@drawable/search_view"
+        app:queryHint="Serach here..."
+        app:iconifiedByDefault="false"
+/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ProductCard"
+            android:layout_width="match_parent"
+            android:layout_height="410dp"
+            android:layout_marginTop="200dp"
+            app:cardElevation="25dp"
+            >
+
+            <ListView
+                android:id="@+id/Products"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+
+        android:layout_below="@+id/ProductCard"
+
+        app:cardBackgroundColor="#f1e9bd"
+
+        app:cardElevation="60dp"
+        >
+
+        <TextView
+            android:id="@+id/TotalLabel"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="Card Total: "
+            android:textColor="#465117"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/aldrich"
+            android:textColor="#465117"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/ProceedButton"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/proceedbutton"
+            android:fontFamily="@font/cabin_semibold"
+            android:text="Proceed to Pay"
+            android:textColor="#cfd186" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

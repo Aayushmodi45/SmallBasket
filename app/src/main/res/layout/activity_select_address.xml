@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8.5"
+    android:background="@drawable/background_6"
+    tools:context=".SelectAddress">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:text="Payment Address"
+        android:textSize="50sp"
+        android:textColor="#465117"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/etCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_weight="1"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textColor="#465117"
+        android:textColorHint="#11752E"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCustomerAddress"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_weight="1.5"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:textColor="#465117"
+            android:textColorHint="#11752E"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/btGetMyCurrentLocation"
+            android:layout_width="0sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@drawable/light_green"
+            android:src="@drawable/get_my_location_logo"
+            />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etCustomerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_weight="1"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#465117"
+        android:textColorHint="#11752E"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etCustomerMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_weight="1"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:textColor="#465117"
+        android:textColorHint="#11752E"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btProceedToPayment"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:layout_marginLeft="60sp"
+        android:layout_marginRight="60sp"
+        android:layout_marginTop="30dp"
+        android:textColor="#465117"
+        android:background="@drawable/paymentxmll"
+        android:text="Proceed To Payment"/>
+
+</LinearLayout>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:id="@+id/main"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="@drawable/background_6"-->
+    <!--    tools:context=".SelectAddress">-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/AddressLabel"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="120dp"-->
+    <!--        android:layout_marginLeft="15dp"-->
+    <!--        android:text="Enter Your Address:"-->
+    <!--        android:gravity="center"-->
+    <!--        android:paddingRight="20dp"-->
+    <!--        android:textSize="15dp"-->
+    <!--        android:elevation="30dp"-->
+    <!--        />-->
+    <!--    <EditText-->
+    <!--        android:id="@+id/AddressBar"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginTop="160dp"-->
+    <!--        android:textSize="16dp"-->
+    <!--        android:layout_marginLeft="15dp"-->
+    <!--        android:textColor="#465117"-->
+    <!--        />-->
+    <!--    <ImageButton-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_toEndOf="@+id/AddressBar"-->
+    <!--        android:layout_below="@+id/AddressLabel"-->
+    <!--        android:src="@drawable/get_my_location_logo"-->
+    <!--        -->
+
+
+
+    <!--</RelativeLayout>-->
