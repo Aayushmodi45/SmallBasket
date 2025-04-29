@@ -61,10 +61,46 @@ public class GroceryAdapter extends RecyclerView.Adapter<GroceryAdapter.GroceryV
         holder.unit.setText(grocery.getMeasurement());
         holder.cost.setText(String.valueOf(grocery.getProductPrice()));
         holder.description.setText(grocery.getDescription());
+        holder.description.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder.setTitle("Description");
+                builder.setMessage(grocery.getDescription());
+                builder.setPositiveButton("OK", null);
+                builder.show();
+            }
+        });
 
         Glide.with(context)
                 .load(grocery.getImgUrl())
                 .into(holder.cardimg);
+        holder.cardimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                View dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_product_details, null);
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder.setView(dialogView);
+
+                ImageView dialogImage = dialogView.findViewById(R.id.dialogImage);
+                TextView dialogProductName = dialogView.findViewById(R.id.dialogProductName);
+                TextView dialogQty = dialogView.findViewById(R.id.dialogProductQty);
+                TextView dialogUnit = dialogView.findViewById(R.id.dialogProductUnit);
+                TextView dialogPrice = dialogView.findViewById(R.id.dialogProductPrice);
+                TextView dialogDesc = dialogView.findViewById(R.id.dialogProductDesc);
+
+                Glide.with(context).load(grocery.getImgUrl()).into(dialogImage);
+                dialogProductName.setText("Name: " + grocery.getProductName());
+                dialogQty.setText("Quantity: " + grocery.getProductStock());
+                dialogUnit.setText("Unit: " + grocery.getMeasurement());
+                dialogPrice.setText("Price: ₹" + grocery.getProductPrice());
+                dialogDesc.setText("Description: " + grocery.getDescription());
+
+                builder.setPositiveButton("OK", null);
+                builder.show();
+            }
+        });
+
         dbDel = FirebaseDatabase.getInstance().getReference("Grocery");
         dbUp = FirebaseDatabase.getInstance().getReference("Grocery");
 

@@ -1,9 +1,8 @@
-<!-- res/drawable/proceedbutton.xml -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <gradient
-        android:startColor="#8BC34A"
-        android:endColor="#558B2F"
+        android:startColor="#6bbb3c"
+        android:endColor="#3a9131"
         android:angle="45"/>
-    <corners android:radius="30dp"/>
+    <corners android:radius="12dp"/>
 </shape>

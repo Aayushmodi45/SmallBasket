@@ -1,125 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UpdateProduct"
-    android:background="@drawable/back1">
+    android:background="#F5F8FB"
+    android:padding="16dp">
 
-    <TextView
-        android:id="@+id/ProductName"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="90dp"
-        android:background="@drawable/filed"
-        android:elevation="20dp"
-        android:fontFamily="@font/aldrich"
-        android:hint="Enter Product Name:"
-        android:paddingLeft="20sp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:gravity="center_vertical"
-        android:textSize="15dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-    <EditText
-        android:id="@+id/ProductStock"
-        android:layout_width="140dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="145dp"
-        android:background="@drawable/filed"
-        android:elevation="20dp"
-        android:fontFamily="@font/aldrich"
-        android:hint="Quantity:"
-        android:paddingLeft="20sp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Product"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0F67B1"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/aldrich" />
 
-    <Spinner
-        android:id="@+id/Measurement"
-        android:layout_width="140dp"
-        android:layout_height="45dp"
-        android:background="@drawable/filed"
-        android:paddingLeft="20dp"
-        android:elevation="20dp"
-        android:layout_marginLeft="186dp"
-        android:layout_marginTop="145dp"/>
+        <EditText
+            android:id="@+id/ProductName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Product Name"
+            android:background="@drawable/input_bg"
+            android:paddingStart="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="#777"
+            android:textSize="16sp"
+            android:fontFamily="@font/aldrich"
+            android:layout_marginBottom="16dp" />
 
-    <EditText
-        android:id="@+id/ProductPrice"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/filed"
-        android:elevation="20dp"
-        android:fontFamily="@font/aldrich"
-        android:hint="Cost of Product Per Unit:"
-        android:paddingLeft="20sp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="15dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
 
-    <EditText
-        android:id="@+id/Description"
-        android:layout_width="300dp"
-        android:layout_height="110dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="260dp"
-        android:background="@drawable/filed"
-        android:elevation="20dp"
-        android:fontFamily="@font/aldrich"
-        android:gravity="top"
-        android:hint="Description:"
-        android:paddingLeft="20sp"
-        android:paddingTop="10dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="15dp" />
-    <Button
-        android:id="@+id/ImgSelect"
-        android:layout_width="130dp"
-        android:layout_height="60dp"
-        android:background="@drawable/buttonmain"
-        android:text="Select Image"
-        android:textSize="15dp"
-        android:textColor="#0F67B1"
-        android:layout_marginTop="390dp"
-        android:layout_marginLeft="27dp"/>
+            <EditText
+                android:id="@+id/ProductStock"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Quantity"
+                android:background="@drawable/input_bg"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="#777"
+                android:textSize="16sp"
+                android:fontFamily="@font/aldrich" />
 
-    <ImageView
-        android:id="@+id/ImgPreview"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="390dp"
-        android:layout_marginLeft="167dp"
-        android:scaleType="fitCenter"
-        android:background="@drawable/filed"/>
+            <Spinner
+                android:id="@+id/Measurement"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/input_bg"
+                android:paddingStart="16dp" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/Update"
-        android:layout_width="130dp"
-        android:layout_height="60dp"
-        android:background="@drawable/buttonmain"
-        android:text="Update"
-        android:textSize="15dp"
-        android:textColor="#0F67B1"
-        android:layout_marginTop="600dp"
-        android:layout_marginLeft="27dp"/>
-    <Button
-        android:id="@+id/Cancel"
-        android:layout_width="130dp"
-        android:layout_height="60dp"
-        android:background="@drawable/buttonmain"
-        android:text="Cancel"
-        android:textSize="15dp"
-        android:textColor="#0F67B1"
-        android:layout_marginTop="600dp"
-        android:layout_marginLeft="197dp"/>
+        <EditText
+            android:id="@+id/ProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Price per Unit"
+            android:background="@drawable/input_bg"
+            android:paddingStart="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="#777"
+            android:textSize="16sp"
+            android:fontFamily="@font/aldrich"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/Description"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Description"
+            android:gravity="top"
+            android:background="@drawable/input_bg"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="#777"
+            android:textSize="16sp"
+            android:fontFamily="@font/aldrich"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/ImgSelect"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Select Image"
+                android:backgroundTint="#D9EAF7"
+                android:textColor="#0F67B1"
+                android:textSize="16sp"
+                android:fontFamily="@font/aldrich" />
+
+            <ImageView
+                android:id="@+id/ImgPreview"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:background="@drawable/input_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/Update"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Update"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:backgroundTint="#0F67B1"
+                android:fontFamily="@font/aldrich" />
+
+            <Button
+                android:id="@+id/Cancel"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="#0F67B1"
+                android:textSize="16sp"
+                android:backgroundTint="#E6F0F8"
+                android:fontFamily="@font/aldrich" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
 
 
-</RelativeLayout>
